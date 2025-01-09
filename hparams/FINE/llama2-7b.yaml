@@ -1,0 +1,23 @@
+alg_name: "FINE"
+model_name: "./pretrained_model/Llama-2-7b-hf"
+device: 0
+epochs: 50
+lr: 5e-3
+gamma: 0.1
+beta: 10
+alpha: 1
+neuron_num: 5
+early_stop_prob: 0.9
+last_layer: 3
+rewrite_module_tmp: "model.layers.{}.mlp.down_proj"
+layer_module_tmp: "model.layers.{}"
+mlp_module_tmp: "model.layers.{}.mlp"
+attn_module_tmp: "model.layers.{}.self_attn"
+ln_f_module: "model.norm"
+lm_head_module: "lm_head"
+model_parallel: true
+fp16: true
+
+
+
+
