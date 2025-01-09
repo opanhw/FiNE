@@ -7,7 +7,7 @@ To get started, please clone this repository and install packages as:
 
 ```bash
 git clone https://github.com/opanhw/FiNE.git
-conda create -n FiNE python=3.9
+conda create -n FiNE python=3.11
 ...
 pip install -r requirements.txt
 ```
