@@ -1,5 +1,5 @@
 # Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs
-This repository is the official implementation of the paper "Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs" (ICLR 2025).
+This repository is the official implementation of the paper ["Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs"](https://openreview.net/forum?id=5xP1HDvpXI) (ICLR 2025).
 
 ## Requirements
 
@@ -62,6 +62,12 @@ Thanks [@wonderful9462](https://github.com/wonderful9462) for the assistance in 
 If you find this code useful, please kindly cite our work as:
 
 ```bibtex
-
+@inproceedings{pan2025precise,
+    title={Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs},
+    author={Haowen Pan and Xiaozhi Wang and Yixin Cao and Zenglin Shi and Xun Yang and Juanzi Li and Meng Wang},
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025},
+    url={https://openreview.net/forum?id=5xP1HDvpXI}
+}
 ```
 
