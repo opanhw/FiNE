@@ -10,9 +10,9 @@ class FINEHyperParams(HyperParams):
     # Method
     epochs: int = None
     lr: float = None
-    beta: int = None
     gamma: int = None
-    theta: int = None
+    beta: int = None
+    alpha: int = None
     neuron_num: int = None
     layer: int = None
     add_eos: bool = False
