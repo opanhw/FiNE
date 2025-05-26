@@ -148,11 +148,11 @@ class _LlamaForCausalLM(LlamaPreTrainedModel):
             def forward_hook(n):
                 def fn(_, input, output):
                     # print(f'output.shape:{output.shape}')
-                    self.act[n].append(output.detach().half().cpu())
+                    self.act[n].append(input[0].detach().half().cpu())
 
                 return fn
 
-            handle_act = [self.model.layers[n].mlp.act_fn.register_forward_hook(forward_hook(n)) for n in
+            handle_act = [self.model.layers[n].mlp.down_proj.register_forward_hook(forward_hook(n)) for n in
                           range(self.config.num_hidden_layers)]
 
         # decoder outputs consists of (dec_features, layer_state, dec_hidden, dec_attn)
